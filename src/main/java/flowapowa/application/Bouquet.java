@@ -1,6 +1,6 @@
 package flowapowa.application;
 
-import flowapowa.forGettingPrices.DeprecatedProvider;
+import flowapowa.forGettingPrices.PriceProvider;
 
 import java.util.ArrayList;
 import java.util.List;
