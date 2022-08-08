@@ -1,8 +1,8 @@
 package flowapowa.library;
 
-import flowapowa.forGettingPrices.PriceProvider;
+import flowapowa.forGettingPrices.Provider;
 
-public class NewLibraryWrapper implements PriceProvider {
+public class NewLibraryWrapper implements Provider {
     private final NewProductProvider provider;
 
     public NewLibraryWrapper(NewProductProvider provider)
