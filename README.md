@@ -1,6 +1,6 @@
 # FlowaPowa
 
-This is an exercise to practice **branching by abstraction** and feature flags.
+This is an exercise to practice **branching by abstraction** and **feature flags**.
 
 ## The problem
 
@@ -16,7 +16,7 @@ The architecture of the application is pretty decent, but it has some flaws. The
 
 We want zero downtime, so we should migrate the application to use the new library without breaking the app. Fortunately we have a comprehensive test suite, and any change that could break it should be noticed by the tests.
 
-Also, we want to use Trunk Based Development and small batches. We need to follow a strategy to isolate the changes needed and be able to make the transition without breaking the pipeline.
+Also, we want to use **Trunk Based Development** and small batches. We need to follow a strategy to isolate the changes needed and be able to make the transition without breaking the pipeline.
 
 ## Some caveats and design decisions
 
