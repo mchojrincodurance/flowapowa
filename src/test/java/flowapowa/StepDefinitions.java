@@ -3,7 +3,6 @@ package flowapowa;
 import flowapowa.application.BouquetBuilder;
 import flowapowa.application.BuildBouquet;
 import flowapowa.application.ReceiptPrinter;
-import flowapowa.forGettingPrices.DeprecatedProvider;
 import flowapowa.forGettingPrices.Provider;
 import flowapowa.forPrintingReceipts.ConsoleReceiptPrinter;
 import flowapowa.forUsingApplication.FlowaPowaApp;

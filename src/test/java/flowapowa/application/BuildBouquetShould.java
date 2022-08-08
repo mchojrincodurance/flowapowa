@@ -1,6 +1,5 @@
 package flowapowa.application;
 
-import flowapowa.forGettingPrices.DeprecatedProvider;
 import flowapowa.forGettingPrices.Provider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
