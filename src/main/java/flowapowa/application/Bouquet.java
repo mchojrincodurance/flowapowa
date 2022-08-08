@@ -28,7 +28,6 @@ public class Bouquet {
 
     public void add(String productName, Integer quantity, Provider provider) {
         double price = provider.getPrice(productName);
-
         Product product = new Product(productName, quantity, price);
 
         products.add(product);
