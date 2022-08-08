@@ -4,8 +4,11 @@ import flowapowa.application.BouquetBuilder;
 import flowapowa.application.BuildBouquet;
 import flowapowa.application.ReceiptPrinter;
 import flowapowa.forGettingPrices.DeprecatedProvider;
+import flowapowa.forGettingPrices.Provider;
 import flowapowa.forPrintingReceipts.ConsoleReceiptPrinter;
 import flowapowa.forUsingApplication.FlowaPowaApp;
+import flowapowa.library.NewLibraryWrapper;
+import flowapowa.library.NewProductProvider;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,12 +19,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StepDefinitions {
 
-    private final DeprecatedProvider provider;
+    private final Provider provider;
     private Integer crafting;
     private String recipe;
 
     public StepDefinitions() {
-        this.provider = new DeprecatedProvider();
+        this.provider = new NewLibraryWrapper(new NewProductProvider());
     }
 
     @Given("{string} costs {double}")
